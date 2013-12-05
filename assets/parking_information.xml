@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<all_cities>
+	<city>
+		<city_name>Aranđelovac</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>9341</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>9342</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona dnevna</zone_name>
+			<zone_number>9343</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zelena zona</zone_name>
+			<zone_number>9344</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zelena zona dnevna</zone_name>
+			<zone_number>9345</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Bačka Palanka</city_name>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>8421</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Bečej</city_name>
+		<zone>
+			<zone_name>Centralna zona</zone_name>
+			<zone_number>8521</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Beograd</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>9111</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>9112</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zelena zona</zone_name>
+			<zone_number>9113</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Plava zona 1h</zone_name>
+			<zone_number>9119</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Plava zona dnevna</zone_name>
+			<zone_number>9118</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Bujanovac</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9071</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona I dnevna</zone_name>
+			<zone_number>9070</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9072</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II dnevna</zone_name>
+			<zone_number>9073</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Ćuprija</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>3541</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>3542</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Despotovac</city_name>
+		<zone>
+			<zone_name>Zona 1</zone_name>
+			<zone_number>8351</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona 2</zone_name>
+			<zone_number>8352</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Dnevna karta</zone_name>
+			<zone_number>8353</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Inđija</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9221</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9222</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Jagodina</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>3501</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>3502</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Kikinda</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>9231</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>9232</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona dnevna</zone_name>
+			<zone_number>9233</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Kragujevac</city_name>
+		<zone>
+			<zone_name>Zona 0</zone_name>
+			<zone_number>8340</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona 1</zone_name>
+			<zone_number>8341</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona 2</zone_name>
+			<zone_number>8342</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona 1 dnevna</zone_name>
+			<zone_number>8343</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona 2 dnevna</zone_name>
+			<zone_number>8344</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Kruševac</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>9371</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>9372</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>III zona</zone_name>
+			<zone_number>9373</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>9370</zone_name>
+			<zone_number>9370</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Lazarevac</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9281</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9282</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II dnevna</zone_name>
+			<zone_number>9280</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Leskovac</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>9161</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>9162</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>III zona</zone_name>
+			<zone_number>9163</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>IV zona</zone_name>
+			<zone_number>9160</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Loznica</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9051</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9052</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II dnevna</zone_name>
+			<zone_number>9050</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Mladenovac</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>9821</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>9822</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona dnevna</zone_name>
+			<zone_number>9820</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Negotin</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9391</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona I dnevna</zone_name>
+			<zone_number>9390</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9392</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II dnevna</zone_name>
+			<zone_number>9394</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Niš</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>9181</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zelena zona</zone_name>
+			<zone_number>9182</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Novi Pazar</city_name>
+		<zone>
+			<zone_name>Zona 3631</zone_name>
+			<zone_number>3631</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona 3632</zone_name>
+			<zone_number>3632</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Novi Sad</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>8211</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Plava zona</zone_name>
+			<zone_number>8212</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Bela zona</zone_name>
+			<zone_number>8215</zone_number>
+			<zone_color>white</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Strand</zone_name>
+			<zone_number>8213</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Najlon</zone_name>
+			<zone_number>8214</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Obrenovac</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>9871</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>9872</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona dnevna</zone_name>
+			<zone_number>9870</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Pančevo</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9131</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9132</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona III dnevna</zone_name>
+			<zone_number>9133</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona III sat</zone_name>
+			<zone_number>9134</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Paraćin</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>9351</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Crvena zona dnevna</zone_name>
+			<zone_number>9350</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>9352</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zute zona dnevna</zone_name>
+			<zone_number>9354</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zelena zona</zone_name>
+			<zone_number>9353</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Pirot</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9101</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9102</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II dnevna</zone_name>
+			<zone_number>9103</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Obe zone dnevna</zone_name>
+			<zone_number>9100</zone_number>
+			<zone_color>purple</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Požarevac</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>8121</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>8122</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Ruma</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>8721</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Crvena zona dnevna</zone_name>
+			<zone_number>8722</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Smederevska Palanka</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>8260</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>8261</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Dnevna karta</zone_name>
+			<zone_number>8262</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Sokobanja</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>9108</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zelena zona</zone_name>
+			<zone_number>9109</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Dnevna karta</zone_name>
+			<zone_number>9110</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Sombor</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9251</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9252</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona III</zone_name>
+			<zone_number>9253</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Extra zona</zone_name>
+			<zone_number>9250</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Dnevna karta</zone_name>
+			<zone_number>9255</zone_number>
+			<zone_color>gray</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Sremska Mitrovica</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>8221</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>8222</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona III</zone_name>
+			<zone_number>8223</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Stara Pazova</city_name>
+		<zone>
+			<zone_name>Bela zona</zone_name>
+			<zone_number>8210</zone_number>
+			<zone_color>white</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>8202</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+	</city>	
+	<city>
+		<city_name>Subotica</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>9241</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>9242</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zelena zona</zone_name>
+			<zone_number>9243</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Plava zona</zone_name>
+			<zone_number>9244</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Bela zona</zone_name>
+			<zone_number>9245</zone_number>
+			<zone_color>white</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Narandzasta zona</zone_name>
+			<zone_number>9246</zone_number>
+			<zone_color>orange</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Ljubicasta zona</zone_name>
+			<zone_number>9247</zone_number>
+			<zone_color>slate</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Surčin</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>9081</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>9082</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona dnevna</zone_name>
+			<zone_number>9080</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Svilajnac</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>3531</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>3532</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Šabac</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>9151</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Plava zona</zone_name>
+			<zone_number>9152</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Dnevna karta</zone_name>
+			<zone_number>9150</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Topola</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9441</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9442</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Trstenik</city_name>
+		<zone>
+			<zone_name>Zona I</zone_name>
+			<zone_number>9471</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II</zone_name>
+			<zone_number>9472</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona II dnevna</zone_name>
+			<zone_number>9470</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Ub</city_name>
+		<zone>
+			<zone_name>Zona 9040</zone_name>
+			<zone_number>9040</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona 9041</zone_name>
+			<zone_number>9041</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zona 9042</zone_name>
+			<zone_number>9042</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Valjevo</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>9141</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Plava zona</zone_name>
+			<zone_number>9142</zone_number>
+			<zone_color>blue</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Plava zona dnevna</zone_name>
+			<zone_number>9140</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Vranje</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>9171</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>I zona dnevna</zone_name>
+			<zone_number>9170</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>9172</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona dnevna</zone_name>
+			<zone_number>9173</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Vrnjačka Banja</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>8361</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Crvena zona dnevna</zone_name>
+			<zone_number>8362</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Posebna zona</zone_name>
+			<zone_number>8363</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Posebna zona dnevna</zone_name>
+			<zone_number>8364</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Vršac</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>8131</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>8132</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Zaječar</city_name>
+		<zone>
+			<zone_name>I zona</zone_name>
+			<zone_number>9191</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>II zona</zone_name>
+			<zone_number>9192</zone_number>
+			<zone_color></zone_color>
+		</zone>
+		<zone>
+			<zone_name>Dnevna karta</zone_name>
+			<zone_number>9193</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+	<city>
+		<city_name>Zrenjanin</city_name>
+		<zone>
+			<zone_name>Crvena zona</zone_name>
+			<zone_number>8230</zone_number>
+			<zone_color>red</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zuta zona</zone_name>
+			<zone_number>8231</zone_number>
+			<zone_color>yellow</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Zelena zona</zone_name>
+			<zone_number>8232</zone_number>
+			<zone_color>green</zone_color>
+		</zone>
+		<zone>
+			<zone_name>Dnevna karta</zone_name>
+			<zone_number>8233</zone_number>
+			<zone_color></zone_color>
+		</zone>
+	</city>
+</all_cities>
