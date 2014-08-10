@@ -16,9 +16,7 @@ import android.widget.Spinner;
 import eu.execom.paymyparking.R;
 import eu.execom.paymyparking.model.Data;
 import eu.execom.paymyparking.service.CitiesService;
-import eu.execom.paymyparking.service.LicensePlatesService;
-import eu.execom.paymyparking.service.SettingsParseModel;
-import eu.execom.paymyparking.service.SettingsService;
+import eu.execom.paymyparking.service.SharedPreferencesService;
 
 public class PayParkingActivity extends Activity {
 
@@ -54,10 +52,7 @@ public class PayParkingActivity extends Activity {
 		try {
 			Data data = new Data();
 			data.setCities(CitiesService.LoadCities(assetMgr.open("parking_information.xml")));
-			data.setLicensePlates(LicensePlatesService.LoadLicensePlates(assetMgr.open("license_plates.xml")));
-			SettingsParseModel settings = SettingsService.LoadSettings(assetMgr.open("settings.xml"), data.getCities());
-			data.setSelectedCity(settings.getSelectedCity());
-			data.setDefaultLicensePlate(settings.getDefaultLicensePlate());
+			SharedPreferencesService.LoadData(this, data);
 			ViewHelper.getApplication(this).setData(data);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -65,8 +60,6 @@ public class PayParkingActivity extends Activity {
 		} catch (XmlPullParserException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} finally {
-			assetMgr.close();
 		}
 	}
 

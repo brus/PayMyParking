@@ -23,6 +23,7 @@ import android.widget.Spinner;
 import eu.execom.paymyparking.R;
 import eu.execom.paymyparking.model.City;
 import eu.execom.paymyparking.model.Data;
+import eu.execom.paymyparking.service.SharedPreferencesService;
 
 public class SettingsActivity extends Activity {
 
@@ -91,6 +92,7 @@ public class SettingsActivity extends Activity {
 						data.setSelectedCity(city);
 					}
 				}
+				SharedPreferencesService.SaveSelectedCity(SettingsActivity.this);
 			}
 
 			@Override
@@ -108,11 +110,13 @@ public class SettingsActivity extends Activity {
 
 	public void setDefaultLicensePlateOnClickHandler(View v) {
 		ViewHelper.getApplication(this).getData().setDefaultLicensePlate((String) v.getTag());
+		SharedPreferencesService.SaveDefaultLicensePlate(this);
 		adapter.notifyDataSetChanged();
 	}
 
 	public void deleteLicensePlateOnClickHandler(View v) {
 		ViewHelper.getApplication(this).getData().getLicensePlates().remove(v.getTag());
+		SharedPreferencesService.SaveLicensePlates(this);
 		adapter.notifyDataSetChanged();
 	}
 
@@ -120,6 +124,7 @@ public class SettingsActivity extends Activity {
 		String licensePlate = ((EditText) findViewById(R.id.newLicensePlate)).getText().toString();
 		((EditText) findViewById(R.id.newLicensePlate)).setText("");
 		ViewHelper.getApplication(this).getData().getLicensePlates().add(licensePlate);
+		SharedPreferencesService.SaveLicensePlates(this);
 		adapter.notifyDataSetChanged();
 	}
 
