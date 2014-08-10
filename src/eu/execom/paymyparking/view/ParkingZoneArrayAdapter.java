@@ -34,7 +34,8 @@ public class ParkingZoneArrayAdapter extends ArrayAdapter<ParkingZone> {
 		textView.setText(parkingZones.get(position).getName());
 
 		ImageView imageView = (ImageView) rowView.findViewById(R.id.zoneImage);
-		imageView.setImageResource(parkingZones.get(position).getColor() == null ? -1 : getImage(parkingZones.get(position).getColor()));
+		// TODO Fix case when color is not defined
+		imageView.setImageResource(parkingZones.get(position).getColor() == null ? R.drawable.blue : getImage(parkingZones.get(position).getColor()));
 
 		return rowView;
 	}

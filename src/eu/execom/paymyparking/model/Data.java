@@ -5,8 +5,9 @@ import java.util.List;
 public class Data {
 	
 	private List<City> cities;
+	private City selectedCity;
 	private List<String> licensePlates;
-	private Settings settings;
+	private String defaultLicensePlate;
 	
 	public List<City> getCities() {
 		return cities;
@@ -14,17 +15,23 @@ public class Data {
 	public void setCities(List<City> cities) {
 		this.cities = cities;
 	}
+	public City getSelectedCity() {
+		return selectedCity;
+	}
+	public void setSelectedCity(City selectedCity) {
+		this.selectedCity = selectedCity;
+	}
 	public List<String> getLicensePlates() {
 		return licensePlates;
 	}
 	public void setLicensePlates(List<String> licensePlates) {
 		this.licensePlates = licensePlates;
 	}
-	public Settings getSettings() {
-		return settings;
+	public String getDefaultLicensePlate() {
+		return defaultLicensePlate;
 	}
-	public void setSettings(Settings settings) {
-		this.settings = settings;
+	public void setDefaultLicensePlate(String defaultLicensePlate) {
+		this.defaultLicensePlate = defaultLicensePlate;
 	}
 
 }

@@ -13,7 +13,7 @@ public class LicensePlatesService {
 	
 	private static String LICENSE_PLATE = "license_plate";
 	
-	static public List<String> LoadLicensePlates(InputStream stream) throws XmlPullParserException, IOException {
+	public static List<String> LoadLicensePlates(InputStream stream) throws XmlPullParserException, IOException {
 		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
         factory.setNamespaceAware(true);
         XmlPullParser xpp = factory.newPullParser();
@@ -41,11 +41,11 @@ public class LicensePlatesService {
         return model.licensePlates;
 	}
 	
-	static private void processStartTag(XmlPullParser xpp, LicensePlatesParseModel model) {
+	private static void processStartTag(XmlPullParser xpp, LicensePlatesParseModel model) {
 		model.setLastTag(xpp.getName());
 	}
 
-	static private void processText(XmlPullParser xpp, LicensePlatesParseModel model) {
+	private static void processText(XmlPullParser xpp, LicensePlatesParseModel model) {
 		String text = xpp.getText();
 		if (text.contains("\t") || text.contains("\n")) {
 			// Do nothing

@@ -1,20 +1,29 @@
 package eu.execom.paymyparking.service;
 
-import eu.execom.paymyparking.model.Settings;
+import eu.execom.paymyparking.model.City;
 
 public class SettingsParseModel {
 
-	Settings settings = new Settings();  
+	private City selectedCity;
+	private String defaultLicensePlate; 
 	String lastTag;
 	
-	public Settings getSettings() {
-		return settings;
+	public City getSelectedCity() {
+		return selectedCity;
 	}
-	
-	public void setSettings(Settings settings) {
-		this.settings = settings;
+
+	public void setSelectedCity(City selectedCity) {
+		this.selectedCity = selectedCity;
 	}
-	
+
+	public String getDefaultLicensePlate() {
+		return defaultLicensePlate;
+	}
+
+	public void setDefaultLicensePlate(String defaultLicensePlate) {
+		this.defaultLicensePlate = defaultLicensePlate;
+	}
+
 	public String getLastTag() {
 		return lastTag;
 	}

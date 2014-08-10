@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/lpCaption"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textSize="20sp" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/setDefaultLicensePlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4sp"
+        android:layout_marginBottom="4sp"
+        android:contentDescription="@string/emptyText"
+        android:onClick="setDefaultLicensePlateOnClickHandler" />
+
+    <ImageButton
+        android:id="@+id/deleteLicensePlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4sp"
+        android:layout_marginBottom="4sp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/emptyText"
+        android:onClick="deleteLicensePlateOnClickHandler"
+        android:src="@drawable/delete" />
+
+</LinearLayout>

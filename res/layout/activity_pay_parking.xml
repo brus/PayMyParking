@@ -13,7 +13,7 @@
         android:id="@+id/tvLicensePlate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="License plate"
+        android:text="@string/license_plate"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Spinner
@@ -25,7 +25,7 @@
         android:id="@+id/tvParkingZones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Parking zones"
+        android:text="@string/parking_zones"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ListView

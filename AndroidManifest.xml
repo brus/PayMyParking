@@ -9,11 +9,11 @@
         android:targetSdkVersion="18" />
 
     <application
+        android:name="eu.execom.paymyparking.application.PayMyParkingApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" 
-		android:name="eu.execom.paymyparking.controller.Controller">
+        android:theme="@style/AppTheme" >
         <activity
             android:name="eu.execom.paymyparking.view.PayParkingActivity"
             android:label="@string/app_name" >
@@ -22,6 +22,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="eu.execom.paymyparking.view.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="eu.execom.paymyparking.view.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="eu.execom.paymyparking.view.PayParkingActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.execom.paymyparking.view.PayParkingActivity" />
         </activity>
     </application>
 

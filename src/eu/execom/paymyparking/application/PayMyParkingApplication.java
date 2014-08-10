@@ -1,9 +1,9 @@
-package eu.execom.paymyparking.controller;
+package eu.execom.paymyparking.application;
 
 import eu.execom.paymyparking.model.Data;
 import android.app.Application;
 
-public class Controller extends Application {
+public class PayMyParkingApplication extends Application {
 	
 	private Data data;
 	
