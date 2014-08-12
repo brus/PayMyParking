@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="10"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="19" />
 
     <application
         android:name="eu.execom.paymyparking.application.PayMyParkingApplication"
@@ -25,7 +25,11 @@
         </activity>
         <activity
             android:name="eu.execom.paymyparking.view.AboutActivity"
-            android:label="@string/title_activity_about" >
+            android:label="@string/title_activity_about" 
+            android:parentActivityName="eu.execom.paymyparking.view.PayParkingActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.execom.paymyparking.view.PayParkingActivity" />
         </activity>
         <activity
             android:name="eu.execom.paymyparking.view.SettingsActivity"
