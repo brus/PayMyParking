@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -108,9 +110,7 @@ public class SettingsActivity extends Activity {
 	}
 
 	public void deleteLicensePlateOnClickHandler(View v) {
-		ViewHelper.getApplication(this).getData().getLicensePlates().remove(v.getTag());
-		SharedPreferencesService.SaveLicensePlates(this);
-		adapter.notifyDataSetChanged();
+		showConfirmDelete(v.getTag().toString());
 	}
 
 	public void addLicensePlateOnClickHandler(View v) {
@@ -124,4 +124,36 @@ public class SettingsActivity extends Activity {
 		}
 		adapter.notifyDataSetChanged();
 	}
+
+	private void showConfirmDelete(final String licensePlate) {
+		AlertDialog dialog = new AlertDialog.Builder(this).create();
+		dialog.setTitle(getString(R.string.confirm_delete_title));
+		dialog.setMessage(String.format(getString(R.string.confirm_delete_description), licensePlate));
+		dialog.setIcon(R.drawable.delete);
+		dialog.setButton(DialogInterface.BUTTON_POSITIVE, getString(R.string.confirm_delete_positive_caption), new DialogInterface.OnClickListener() {
+
+			@Override
+			public void onClick(DialogInterface dialog, int whichButton) {
+				deleteLicensePlate(licensePlate);
+				dialog.dismiss();
+			}
+
+		});
+		dialog.setButton(DialogInterface.BUTTON_NEGATIVE, getString(R.string.confirm_delete_negative_caption), new DialogInterface.OnClickListener() {
+
+			@Override
+			public void onClick(DialogInterface dialog, int whichButton) {
+				dialog.dismiss();
+			}
+
+		});
+		dialog.show();
+	}
+
+	private void deleteLicensePlate(final String licensePlate) {
+		ViewHelper.getApplication(this).getData().getLicensePlates().remove(licensePlate);
+		SharedPreferencesService.SaveLicensePlates(this);
+		adapter.notifyDataSetChanged();
+	}
+
 }
