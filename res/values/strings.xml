@@ -2,7 +2,7 @@
 <resources>
 
     <string name="emptyText"></string>
-    <string name="app_name">PayMyParking</string>
+    <string name="app_name">Pay My Parking</string>
     <string name="action_settings">Settings</string>
     <string name="action_about">About</string>
     <string name="license_plate">License plate</string>
@@ -17,5 +17,18 @@
     <string name="confirm_delete_description">Do you want to delete \"%s\" license plate?</string>
     <string name="confirm_delete_positive_caption">Delete</string>
     <string name="confirm_delete_negative_caption">Cancel</string>
+    <string name="confirm_parking_payment">Confirm parking payment</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <string name="confirm_pay_parking_title">Pay parking</string>
+    <string name="confirm_pay_parking_description">Do you want pay parking in parking zone \"%s\"?</string>
+    <string name="confirm_pay_parking_positive_caption">Pay parking</string>
+    <string name="confirm_pay_parking_negative_caption">Cancel</string>
+    
+    <string name="result_dialog_title">Pay parking info</string>
+    <string name="result_dialog_positive_description">Parking was successfully paid.</string>
+    <string name="result_dialog_negative_description">Error occurred while trying to pay the parking. Please try again.</string>
+    <string name="result_dialog_button_caption">OK</string>
 
 </resources>

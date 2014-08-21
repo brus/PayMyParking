@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import eu.execom.paymyparking.R;
 import eu.execom.paymyparking.model.City;
@@ -34,6 +35,12 @@ public class SettingsActivity extends Activity {
 		addListeners();
 		updateNewEnabled();
 		initializeSelectCity();
+		initializeConfirmParkingPayment();
+	}
+
+	private void initializeConfirmParkingPayment() {
+		((RadioButton) findViewById(R.id.confirmParkingPaymentNo)).setChecked(!ViewHelper.getApplication(this).getData().getConfirmParkingPayment());
+		((RadioButton) findViewById(R.id.confirmParkingPaymentYes)).setChecked(ViewHelper.getApplication(this).getData().getConfirmParkingPayment());
 	}
 
 	private void initializeSelectCity() {
@@ -125,11 +132,15 @@ public class SettingsActivity extends Activity {
 		adapter.notifyDataSetChanged();
 	}
 
+	public void onConfirmParkingPaymentClicked(View view) {
+		ViewHelper.getApplication(this).getData().setConfirmParkingPayment(view.getId() == R.id.confirmParkingPaymentYes);
+		SharedPreferencesService.SaveConfirmParkingPayment(this);
+	}
+
 	private void showConfirmDelete(final String licensePlate) {
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
 		dialog.setTitle(getString(R.string.confirm_delete_title));
 		dialog.setMessage(String.format(getString(R.string.confirm_delete_description), licensePlate));
-		dialog.setIcon(R.drawable.delete);
 		dialog.setButton(DialogInterface.BUTTON_POSITIVE, getString(R.string.confirm_delete_positive_caption), new DialogInterface.OnClickListener() {
 
 			@Override

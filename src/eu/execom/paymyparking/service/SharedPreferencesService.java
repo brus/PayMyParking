@@ -17,6 +17,7 @@ public class SharedPreferencesService {
 	private static String LICENSE_PLATES = "license_plates";
 	private static String DEFAULT_LICENSE_PLATE = "default_license_plate";
 	private static String SELECTED_CITY = "selected_city";
+	private static String CONFIRM_PARKING_PAYMENT = "confirm_parking_payment";
 
 	public static void LoadData(Activity activity, Data data) {
 		SharedPreferences sharedPref = activity.getSharedPreferences(SHARED_PREFERENCES, Context.MODE_PRIVATE);
@@ -35,6 +36,8 @@ public class SharedPreferencesService {
 				}
 			}
 		}
+
+		data.setConfirmParkingPayment(sharedPref.getBoolean(CONFIRM_PARKING_PAYMENT, false));
 	}
 
 	public static void SaveLicensePlates(Activity activity) {
@@ -55,6 +58,13 @@ public class SharedPreferencesService {
 		SharedPreferences sharedPref = activity.getSharedPreferences(SHARED_PREFERENCES, Context.MODE_PRIVATE);
 		SharedPreferences.Editor editor = sharedPref.edit();
 		editor.putString(SELECTED_CITY, ViewHelper.getApplication(activity).getData().getSelectedCity().getName());
+		editor.commit();
+	}
+
+	public static void SaveConfirmParkingPayment(Activity activity) {
+		SharedPreferences sharedPref = activity.getSharedPreferences(SHARED_PREFERENCES, Context.MODE_PRIVATE);
+		SharedPreferences.Editor editor = sharedPref.edit();
+		editor.putBoolean(CONFIRM_PARKING_PAYMENT, ViewHelper.getApplication(activity).getData().getConfirmParkingPayment());
 		editor.commit();
 	}
 }
