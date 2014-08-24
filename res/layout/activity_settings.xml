@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SettingsActivity" >
 
+    <!-- License plates payment -->
     <TextView
         android:id="@+id/tvLicensePlates"
         android:layout_width="wrap_content"
@@ -45,11 +46,14 @@
             android:contentDescription="@string/emptyText"
             android:onClick="addLicensePlateOnClickHandler" />
     </LinearLayout>
+    <!-- License plates payment -->
 
+    <!-- Select city payment -->
     <TextView
         android:id="@+id/tvSelectCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
         android:text="@string/select_city"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -57,13 +61,14 @@
         android:id="@+id/spnSelectCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+	<!-- Select city payment -->
+	
     <!-- Confirm parking payment -->
-
     <TextView
         android:id="@+id/tvConfirmParkingPayment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
         android:text="@string/confirm_parking_payment"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -86,5 +91,6 @@
             android:onClick="onConfirmParkingPaymentClicked"
             android:text="@string/no" />
     </RadioGroup>
-
+	<!-- Confirm parking payment -->
+	
 </LinearLayout>

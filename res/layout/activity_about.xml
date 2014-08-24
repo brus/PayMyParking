@@ -8,9 +8,78 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AboutActivity" >
 
-    <TextView
+    <ImageView
+        android:id="@+id/aboutExecomLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/about_execom_logo_dsc"
+        android:src="@drawable/execom_logo" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutExecomLogo"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/about_title"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/aboutDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutTitle"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/about_description"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/aboutSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutDescription"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:paddingTop="20dp"
+        android:text="@string/about_site"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/aboutCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutSite"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/about_copyright" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutCopyright"
+        android:layout_centerHorizontal="true" 
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/aboutEnvelope"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/envelope" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/aboutSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="email"
+            android:text="@string/about_support"
+            android:textSize="18sp" />
+    </LinearLayout>
 
 </RelativeLayout>

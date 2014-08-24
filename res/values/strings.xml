@@ -20,6 +20,12 @@
     <string name="confirm_parking_payment">Confirm parking payment</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="about_execom_logo_dsc">Execom logo</string>
+    <string name="about_title">Pay My Parking 1.0.0</string>
+    <string name="about_description">Easy to use, one click application for parking payment in Serbia.</string>
+    <string name="about_site">http://www.execom.eu</string>
+    <string name="about_copyright">Copyright &#169; 2014 Pay My Parking</string>
+    <string name="about_support">brus@execom.eu</string>
     
     <string name="confirm_pay_parking_title">Pay parking</string>
     <string name="confirm_pay_parking_description">Do you want pay parking in parking zone \"%s\"?</string>

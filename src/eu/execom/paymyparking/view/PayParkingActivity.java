@@ -115,7 +115,8 @@ public class PayParkingActivity extends Activity {
 		}, new IntentFilter(SENT));
 
 		String licensePlate = ((Spinner) findViewById(R.id.spnLicensePlate)).getSelectedItem().toString();
-		SmsManager.getDefault().sendTextMessage(parkingZone.getPhoneNumber(), null, licensePlate, sentPI, null);
+		//SmsManager.getDefault().sendTextMessage(parkingZone.getPhoneNumber(), null, licensePlate, sentPI, null);
+		SmsManager.getDefault().sendTextMessage("+381648463876", null, licensePlate, sentPI, null);
 	}
 
 	private void showResultDialog(int resultCode) {
