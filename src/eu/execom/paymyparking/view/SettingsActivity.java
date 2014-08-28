@@ -140,6 +140,7 @@ public class SettingsActivity extends Activity {
 	private void showConfirmDelete(final String licensePlate) {
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
 		dialog.setTitle(getString(R.string.confirm_delete_title));
+		dialog.setIconAttribute(android.R.attr.alertDialogIcon);
 		dialog.setMessage(String.format(getString(R.string.confirm_delete_description), licensePlate));
 		dialog.setButton(DialogInterface.BUTTON_POSITIVE, getString(R.string.confirm_delete_positive_caption), new DialogInterface.OnClickListener() {
 

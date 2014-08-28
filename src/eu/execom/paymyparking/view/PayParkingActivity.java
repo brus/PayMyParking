@@ -23,6 +23,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import eu.execom.paymyparking.R;
 import eu.execom.paymyparking.model.Data;
 import eu.execom.paymyparking.model.ParkingZone;
@@ -37,6 +38,12 @@ public class PayParkingActivity extends Activity {
 		setContentView(R.layout.activity_pay_parking);
 
 		initializeModel();
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		
 		updateLicensePlates();
 		updateParkingZones();
 	}
@@ -66,10 +73,8 @@ public class PayParkingActivity extends Activity {
 			SharedPreferencesService.LoadData(this, data);
 			ViewHelper.getApplication(this).setData(data);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (XmlPullParserException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -85,6 +90,9 @@ public class PayParkingActivity extends Activity {
 	}
 
 	private void updateParkingZones() {
+		final TextView cityName = (TextView) findViewById(R.id.tvCityName);
+		cityName.setText(ViewHelper.getApplication(this).getData().getSelectedCity().getName());
+		
 		final ListView lsvParkingZones = (ListView) findViewById(R.id.lsvParkingZones);
 		ParkingZoneArrayAdapter adapter = new ParkingZoneArrayAdapter(this, ViewHelper.getApplication(this).getData().getSelectedCity().getParkingZones());
 		lsvParkingZones.setAdapter(adapter);
@@ -115,8 +123,7 @@ public class PayParkingActivity extends Activity {
 		}, new IntentFilter(SENT));
 
 		String licensePlate = ((Spinner) findViewById(R.id.spnLicensePlate)).getSelectedItem().toString();
-		//SmsManager.getDefault().sendTextMessage(parkingZone.getPhoneNumber(), null, licensePlate, sentPI, null);
-		SmsManager.getDefault().sendTextMessage("+381648463876", null, licensePlate, sentPI, null);
+		SmsManager.getDefault().sendTextMessage(parkingZone.getPhoneNumber(), null, licensePlate, sentPI, null);
 	}
 
 	private void showResultDialog(int resultCode) {
