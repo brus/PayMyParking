@@ -9,6 +9,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+import eu.execom.paymyparking.model.CitiesParseModel;
 import eu.execom.paymyparking.model.City;
 import eu.execom.paymyparking.model.ParkingZone;
 

@@ -1,10 +1,8 @@
-package eu.execom.paymyparking.service;
+package eu.execom.paymyparking.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import eu.execom.paymyparking.model.City;
-import eu.execom.paymyparking.model.ParkingZone;
 
 public class CitiesParseModel {
 	private List<City> cities;
