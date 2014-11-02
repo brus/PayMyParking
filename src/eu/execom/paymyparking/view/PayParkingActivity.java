@@ -32,6 +32,9 @@ import eu.execom.paymyparking.service.SharedPreferencesService;
 
 public class PayParkingActivity extends Activity {
 
+	private static final String SENT = "SMS_SENT";
+	private BroadcastReceiver smsIndicationReceiver;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -39,13 +42,29 @@ public class PayParkingActivity extends Activity {
 
 		initializeModel();
 	}
-	
+
 	@Override
 	protected void onResume() {
 		super.onResume();
-		
+
 		updateLicensePlates();
 		updateParkingZones();
+
+		smsIndicationReceiver = new BroadcastReceiver() {
+			@Override
+			public void onReceive(Context arg0, Intent arg1) {
+				String message = getResultCode() == Activity.RESULT_OK ? getString(R.string.result_dialog_positive_description) : getString(R.string.result_dialog_negative_description);
+				showInfoDialog(getString(R.string.result_dialog_title), message, getResultCode() == Activity.RESULT_OK);
+			}
+		};
+		registerReceiver(smsIndicationReceiver, new IntentFilter(SENT));
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+
+		unregisterReceiver(smsIndicationReceiver);
 	}
 
 	@Override
@@ -92,7 +111,7 @@ public class PayParkingActivity extends Activity {
 	private void updateParkingZones() {
 		final TextView cityName = (TextView) findViewById(R.id.tvCityName);
 		cityName.setText(ViewHelper.getApplication(this).getData().getSelectedCity().getName());
-		
+
 		final ListView lsvParkingZones = (ListView) findViewById(R.id.lsvParkingZones);
 		ParkingZoneArrayAdapter adapter = new ParkingZoneArrayAdapter(this, ViewHelper.getApplication(this).getData().getSelectedCity().getParkingZones());
 		lsvParkingZones.setAdapter(adapter);
@@ -112,29 +131,28 @@ public class PayParkingActivity extends Activity {
 	}
 
 	private void payParking(ParkingZone parkingZone) {
-		final String SENT = "SMS_SENT";
+		if (((Spinner) findViewById(R.id.spnLicensePlate)).getSelectedItem() == null) {
+			showInfoDialog(getString(R.string.no_license_plate_title), getString(R.string.no_license_plate_description), false);
+			return;
+		}
+
 		PendingIntent sentPI = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
-
-		registerReceiver(new BroadcastReceiver() {
-			@Override
-			public void onReceive(Context arg0, Intent arg1) {
-				showResultDialog(getResultCode());
-			}
-		}, new IntentFilter(SENT));
-
 		String licensePlate = ((Spinner) findViewById(R.id.spnLicensePlate)).getSelectedItem().toString();
 		SmsManager.getDefault().sendTextMessage(parkingZone.getPhoneNumber(), null, licensePlate, sentPI, null);
 	}
 
-	private void showResultDialog(int resultCode) {
+	private void showInfoDialog(String title, String message, final Boolean closeActivity) {
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
-		dialog.setTitle(getString(R.string.result_dialog_title));
-		dialog.setMessage(resultCode == Activity.RESULT_OK ? getString(R.string.result_dialog_positive_description) : getString(R.string.result_dialog_negative_description));
-		dialog.setButton(DialogInterface.BUTTON_NEUTRAL, getString(R.string.result_dialog_button_caption), new DialogInterface.OnClickListener() {
+		dialog.setTitle(title);
+		dialog.setMessage(message);
+		dialog.setButton(DialogInterface.BUTTON_NEUTRAL, getString(R.string.ok_button_caption), new DialogInterface.OnClickListener() {
 
 			@Override
 			public void onClick(DialogInterface dialog, int whichButton) {
 				dialog.dismiss();
+				if (closeActivity) {
+					finish();
+				}
 			}
 
 		});

@@ -28,13 +28,16 @@
     <string name="about_support">brus@execom.eu</string>
     
     <string name="confirm_pay_parking_title">Pay parking</string>
-    <string name="confirm_pay_parking_description">Do you want pay parking in parking zone \"%s\"?</string>
+    <string name="confirm_pay_parking_description">Do you want to pay the parking in the parking zone \"%s\"?</string>
     <string name="confirm_pay_parking_positive_caption">Pay parking</string>
     <string name="confirm_pay_parking_negative_caption">Cancel</string>
     
     <string name="result_dialog_title">Pay parking info</string>
     <string name="result_dialog_positive_description">Parking was successfully paid.</string>
     <string name="result_dialog_negative_description">Error occurred while trying to pay the parking. Please try again.</string>
-    <string name="result_dialog_button_caption">OK</string>
+    <string name="ok_button_caption">OK</string>
+    
+    <string name="no_license_plate_title">Invalid license plate</string>
+    <string name="no_license_plate_description">Please enter the License Plate in Settings menu before paying the parking.</string>
 
 </resources>
